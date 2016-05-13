@@ -77,7 +77,7 @@ public class Segovia_3_Arrays {
         System.out.println(" which way would you like to go w,a,s,d, or q,e,z,c?");
         String direction = sc.nextLine();
         //north
-        if (direction.equalsIgnoreCase("w")) {
+        if (direction.equalsIgnoreCase("n")) {
             ny--;
             traps();
             enemyZ();
@@ -93,7 +93,7 @@ public class Segovia_3_Arrays {
             y++;
         }
         //east
-        if (direction.equalsIgnoreCase("d")) {
+        if (direction.equalsIgnoreCase("e")) {
             nx++;
             traps();
             enemyZ();
@@ -101,7 +101,7 @@ public class Segovia_3_Arrays {
             x++;
         }
         //west
-        if (direction.equalsIgnoreCase("a")) {
+        if (direction.equalsIgnoreCase("w")) {
             nx--;
             traps();
             enemyZ();
@@ -109,7 +109,7 @@ public class Segovia_3_Arrays {
             x--;
         }
         //northEast
-        if (direction.equalsIgnoreCase("e")) {
+        if (direction.equalsIgnoreCase("ne")) {
             ny--;
             nx++;
             traps();
@@ -117,9 +117,10 @@ public class Segovia_3_Arrays {
             treasureChest();
             y--;
             x++;
-            //northWest
+            
         }
-        if (direction.equalsIgnoreCase("q")) {
+        //northWest
+        if (direction.equalsIgnoreCase("nw")) {
             y--;
             x--;
             traps();
@@ -127,9 +128,10 @@ public class Segovia_3_Arrays {
             treasureChest();
             y--;
             x--;
-            //southWest    
+                
         }
-        if (direction.equalsIgnoreCase("z")) {
+        //southWest
+        if (direction.equalsIgnoreCase("sw")) {
             ny++;
             nx--;
             traps();
@@ -137,9 +139,10 @@ public class Segovia_3_Arrays {
             treasureChest();
             y++;
             x--;
-            //southEast    
-        }
-        if (direction.equalsIgnoreCase("c")) {
+              
+        } 
+    //southEast 
+        if (direction.equalsIgnoreCase("se")) {
             ny++;
             nx++;
             traps();
